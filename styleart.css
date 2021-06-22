@@ -1,0 +1,143 @@
+*::before,*::after{
+    box-sizing:border-box;
+}
+body{
+background-color: hsl(200,50%,12%);
+display:flex;
+justify-content: center;
+align-items:center;
+height:100vh;
+width:100vw;    
+}
+.head{
+    background-color:#eebb99;
+    height:250px;
+    width:250px;
+    border-radius:30% 30% 100% 100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+}
+.eyes{
+    position:absolute;
+   display:flex;
+ justify-content:space-between;  
+}
+.eye{
+    background-color: #fff;
+    height:30px;
+    width:50px; 
+    margin:20px;
+    border-radius:100%;
+    border-top:3px solid darksalmon;
+    border-bottom:3px solid darksalmon;
+display:flex;
+justify-content:center;
+align-items:center;
+position:relative;
+overflow:hidden;
+}
+.eye::before{
+    content:'';
+    position:absolute;
+    height:35px;
+    width:35px;
+    background-color:#af6e4d;
+    border-radius:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:10px;
+}
+.eye::after{
+content:'';
+position:absolute;
+height:15px;
+width:15px;
+background-color:black;
+border-radius:100%;
+margin-left:12px;
+margin-bottom:7px;
+}
+.brows{
+    position:absolute;
+   display:flex;
+ justify-content:space-between;   
+}
+.brow{
+    height:30px;
+    width:50px; 
+    margin:20px;
+    border-radius:40%;
+    border-top:8px solid #000;
+display:flex;
+justify-content:center;
+align-items:center;
+position:relative;
+top:-8px;
+}
+.nose{
+    position:relative;
+    top:40px;
+    border-left:3px solid gray;
+    border-right:3px solid gray;
+    border-bottom:3px solid gray;
+
+
+    border-radius:0 0 100% 100%;    
+    height:25px;
+    width:25px;
+}
+.mouth{
+    position:absolute;
+    background-color:white;
+    height:30px;
+    width:80px;
+    top:190px;
+    border-radius:10% 10% 50% 50%;
+    border-top:2px solid darksalmon;
+    border-bottom:3px solid darksalmon;
+}
+.hair{
+position:absolute;
+height:120px;
+width:250px;
+background-color: #000;
+top: -80px;
+border-radius:50% 100% 0 0;
+}
+.hair::before,.hair::after{
+    content:'';
+    position:absolute;
+    top:70%;   
+    background-color: #000;
+    height:100px;
+    width:10px;
+}
+.hair::after{
+    right:0;
+}
+.ears{
+    display:flex;
+    justify-content:space-between;
+}
+.ear{
+    position:absolute;
+    background-color: #eebb99;
+    margin:20px;
+border-radius:100%;
+    height:70px;
+    width:40px;
+}
+.ear1{
+    position:absolute;
+    left:-20%;
+    top:25%;
+}
+.ear2{
+    position:absolute;
+    left:88%;
+    top:25%;
+    
+}
